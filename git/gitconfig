@@ -1,0 +1,37 @@
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    prune-local = git config --global push.default current branch --merged | grep -v ^* | xargs git branch -d
+    hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit --date=re
+lative
+    st = status -sb
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    stats = shortlog -sne
+    whatsnew = log HEAD@{1}..
+    incoming = "!git remote update -p; git log ..@{u}"
+    outgoing = log @{u}..
+
+[color]
+    ui = auto
+
+[core]
+    editor = vi
+    excludesfile = ~/.gitignore_global
+
+[push]
+    default = current
+
+[help]
+    autocorrent = 1
+
+[branch]
+    autosetuprebase = never
+
+[user]
+    name = Stian Martinsen
+    email = stianm@me.com
+
+[diff]
+    algorithm = patience
