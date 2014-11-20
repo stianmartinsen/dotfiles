@@ -3,6 +3,7 @@
 set nocompatible
 syntax on
 colorscheme badwolf
+set number
 
 " Phatogen
 call pathogen#infect()
@@ -142,16 +143,6 @@ set wildignore+=*.sw? " Vim swap files
 set wildignore+=*.DS_Store " OSX bullshit
 set wildignore+=*.luac " Lua byte code
 set wildignore+=*.orig " Merge resolution files
-
-" }}}
-
-" Backups {{{
-
-set undodir=~/.vim/tmp/undo// " undo files
-set backupdir=~/.vim/tmp/backup// " backups
-set directory=~/.vim/tmp/swap// " swap files
-" Vagrant NFS shared folder doesn't like it?!
-"set backup " enable backups
 
 " }}}
 
