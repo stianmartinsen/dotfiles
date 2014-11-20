@@ -27,3 +27,10 @@ alias live="git co live"
 alias dev="git co dev"
 alias master="git co master"
 
+gogo() { cd /var/www/ez/$1; }
+compctl -W /var/www/ez/ -/ gogo
+
+#cd /root/07ezdev
+#source /root/07ezdev/startupzsh.sh
+#cd /root
+
