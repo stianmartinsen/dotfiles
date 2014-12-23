@@ -145,16 +145,6 @@ set wildignore+=*.orig " Merge resolution files
 
 " }}}
 
-" Backups {{{
-
-set undodir=~/.vim/tmp/undo// " undo files
-set backupdir=~/.vim/tmp/backup// " backups
-set directory=~/.vim/tmp/swap// " swap files
-" Vagrant NFS shared folder doesn't like it?!
-"set backup " enable backups
-
-" }}}
-
 " Cursorline {{{
 " Only show cursorline in the current window and in normal mode.
 
