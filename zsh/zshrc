@@ -27,3 +27,5 @@ alias live="git co live"
 alias dev="git co dev"
 alias master="git co master"
 
+alias tb="nc termbin.com 9999"
+
