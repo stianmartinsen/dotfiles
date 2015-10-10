@@ -5,7 +5,16 @@ call pathogen#helptags() " Make :help work for bundles
 " Colors
 set background=dark
 colorscheme solarized
-syntax on
+
+" Tabs
+set tabstop=4
+set softtabstop=4
+set expandtab
+
+" UI
+set number
+set list "Show white space
+set cursorline "Hightligt current line
 
 " Auto set :paste when pasting
 if &term =~ "xterm.*"
